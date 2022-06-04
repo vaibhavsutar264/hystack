@@ -1,0 +1,25 @@
+{
+  "name": "haystack",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-script-tag": "^1.1.2",
+    "run": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6"
+  }
+}
