@@ -32,10 +32,6 @@ import React from 'react';
 export default function Home() {
 	return (
 		<div className="center">
-			<h2> Home page </h2>
-			<Link href="/about">
-			About us
-</Link>
 		</div>
 	);
 }

@@ -1,24 +1,26 @@
 // import {ScrollMagic} from "scrollmagic";
-import Link from 'next/link';
+// import Controller from 'scrollmagic';
+// import Link from 'next/link';
 import $ from 'jquery';
-<Link href="https://scrollmagic.io/docs/ScrollMagic_Controller.js.html"></Link>;
+{/* <Link href="https://scrollmagic.io/docs/ScrollMagic_Controller.js.html"></Link>; */ }
 // window.jQuery = $;
 // import './controller';
 
 
 
-if (typeof window !== 'undefined'){        
-if (process.browser){let abc = $('.menu_container'); 
+if (typeof window !== 'undefined') {
+    // if (process.browser) {
+        let abc = document.getElementsByClassName('menu_container'); 
 
-$("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("bgtoggle");
-    var navMenu = document.getElementById("menu_container");
-    navToggle.addEventListener("click", function(e){
-      // navMenu.classList.toggle("open");
-      navMenu.style.opacity="1";
-    });
-  });
-}
+        document.addEventListener("DOMContentLoaded", function(){
+            var navToggle = document.getElementById("bgtoggle");
+            var navMenu = document.getElementById("menu_container");
+            navToggle.addEventListener("click", function(e){
+              // navMenu.classList.toggle("open");
+              navMenu.style.opacity="1";
+            });
+        });
+    // }
 }
 
 //   const stickyVideoModule = document.querySelector(".sticky-video-module");
@@ -88,161 +90,161 @@ $("DOMContentLoaded", function(){
 //text-in-video-script
 
 // let foo = null; 
-if (typeof window !== 'undefined'){
-//   foo = window.localStorage.getItem("foo");
+if (typeof window !== 'undefined') {
+    //   foo = window.localStorage.getItem("foo");
 
-$($).ready(function() {
+    $($).ready(function () {
 
-  var cursor = $(".cursor");
-  var src = $("#banner").attr("src");
+        var cursor = $(".cursor");
+        var src = $("#banner").attr("src");
 
-  $(window).mousemove(function(e) {
-      cursor.css({
-          top: e.clientY - cursor.height() / 2,
-          left: e.clientX - cursor.width() / 2
-      });
-  });
+        $(window).mousemove(function (e) {
+            cursor.css({
+                top: e.clientY - cursor.height() / 2,
+                left: e.clientX - cursor.width() / 2
+            });
+        });
 
-  $(window)
-      .mouseleave(function() {
-          cursor.css({
-              opacity: "0"
-          });
-      })
-      .mouseenter(function() {
-          cursor.css({
-              opacity: "1"
-          });
-      });
+        $(window)
+            .mouseleave(function () {
+                cursor.css({
+                    opacity: "0"
+                });
+            })
+            .mouseenter(function () {
+                cursor.css({
+                    opacity: "1"
+                });
+            });
 
-  $(".link")
-      .mouseenter(function() {
-          cursor.css({
-              transform: "scale(10.2)",   
-          });
-      })
-      .mouseleave(function() {
-          cursor.css({
-              transform: "scale(1)"
+        $(".link")
+            .mouseenter(function () {
+                cursor.css({
+                    transform: "scale(10.2)",
+                });
+            })
+            .mouseleave(function () {
+                cursor.css({
+                    transform: "scale(1)"
 
-          });
-      });
+                });
+            });
 
-  $(window)
-      .mousedown(function() {
-          cursor.css({
-              transform: "scale(.2)"
-          });
-      })
-      .mouseup(function() {
-          cursor.css({
-              transform: "scale(1)"
-          });
-      });
-});
+        $(window)
+            .mousedown(function () {
+                cursor.css({
+                    transform: "scale(.2)"
+                });
+            })
+            .mouseup(function () {
+                cursor.css({
+                    transform: "scale(1)"
+                });
+            });
+    });
 
-let updateScrollPos = function (e) {
-  $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
-}
+    let updateScrollPos = function (e) {
+        $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
+    }
 
-class Button {
-  constructor(HTMLButtonElement) {
-      this.button = HTMLButtonElement;
-      this.width = this.button.offsetWidth;
-      this.height = this.button.offsetHeight;
-      this.left = this.button.offsetLeft;
-      this.top = this.button.offsetTop;
-      this.x = 0;
-      this.y = 0;
-      this.cursorX = 0;
-      this.cursorY = 0;
-      this.magneticPullX = 0.4;
-      this.magneticPullY = 0.9;
-      this.isHovering = false;
-      // this.magnetise();
-      // this.createRipple();
-  }
+    class Button {
+        constructor(HTMLButtonElement) {
+            this.button = HTMLButtonElement;
+            this.width = this.button.offsetWidth;
+            this.height = this.button.offsetHeight;
+            this.left = this.button.offsetLeft;
+            this.top = this.button.offsetTop;
+            this.x = 0;
+            this.y = 0;
+            this.cursorX = 0;
+            this.cursorY = 0;
+            this.magneticPullX = 0.4;
+            this.magneticPullY = 0.9;
+            this.isHovering = false;
+            // this.magnetise();
+            // this.createRipple();
+        }
 
-  onEnter = () => {
-      gsap.to(this.button, 0.4, {
-          x: this.x * this.magneticPullX,
-          y: this.y * this.magneticPullY,
-          ease: Power4.easeOut
-      });
-  };
+        onEnter = () => {
+            gsap.to(this.button, 0.4, {
+                x: this.x * this.magneticPullX,
+                y: this.y * this.magneticPullY,
+                ease: Power4.easeOut
+            });
+        };
 
-  onLeave = () => {
-      gsap.to(this.button, 0.7, {
-          x: 0,
-          y: 0,
-          ease: Elastic.easeOut.config(1.1, 0.5)
-      });
-  };
+        onLeave = () => {
+            gsap.to(this.button, 0.7, {
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut.config(1.1, 0.5)
+            });
+        };
 
-  // magnetise = () => {
-  //     document.querySelector("body").addEventListener("mousemove", (e) => {
-  //         this.cursorX = e.clientX;
-  //         this.cursorY = e.clientY;
+        // magnetise = () => {
+        //     document.querySelector("body").addEventListener("mousemove", (e) => {
+        //         this.cursorX = e.clientX;
+        //         this.cursorY = e.clientY;
 
-  //         const center = {
-  //             x: this.left + this.width / 2,
-  //             y: this.top + this.height / 2
-  //         };
+        //         const center = {
+        //             x: this.left + this.width / 2,
+        //             y: this.top + this.height / 2
+        //         };
 
-  //         this.x = this.cursorX - center.x;
-  //         this.y = this.cursorY - center.y;
+        //         this.x = this.cursorX - center.x;
+        //         this.y = this.cursorY - center.y;
 
-  //         const distance = Math.sqrt(this.x * this.x + this.y * this.y);
-  //         const hoverArea = this.isHovering ? 0.6 : 0.5;
+        //         const distance = Math.sqrt(this.x * this.x + this.y * this.y);
+        //         const hoverArea = this.isHovering ? 0.6 : 0.5;
 
-  //         if (distance < this.width * hoverArea) {
-  //             if (!this.isHovering) {
-  //                 this.isHovering = true;
-  //             }
-  //             this.onEnter();
-  //         } else {
-  //             if (this.isHovering) {
-  //                 this.onLeave();
-  //                 this.isHovering = false;
-  //             }
-  //         }
-  //     });
-  // };
+        //         if (distance < this.width * hoverArea) {
+        //             if (!this.isHovering) {
+        //                 this.isHovering = true;
+        //             }
+        //             this.onEnter();
+        //         } else {
+        //             if (this.isHovering) {
+        //                 this.onLeave();
+        //                 this.isHovering = false;
+        //             }
+        //         }
+        //     });
+        // };
 
-  createRipple = () => {
-      this.button.addEventListener("click", () => {
-          const circle = document.createElement("span");
-          const diameter = Math.max(
-              this.button.clientWidth,
-              this.button.clientHeight
-          );
-          const radius = diameter / 2;
+        createRipple = () => {
+            this.button.addEventListener("click", () => {
+                const circle = document.createElement("span");
+                const diameter = Math.max(
+                    this.button.clientWidth,
+                    this.button.clientHeight
+                );
+                const radius = diameter / 2;
 
-          const offsetLeft = this.left + this.x * this.magneticPullX;
-          const offsetTop = this.top + this.y * this.magneticPullY;
+                const offsetLeft = this.left + this.x * this.magneticPullX;
+                const offsetTop = this.top + this.y * this.magneticPullY;
 
-          circle.style.width = circle.style.height = `${diameter}px`;
-          circle.style.left = `${this.cursorX - offsetLeft - radius}px`;
-          circle.style.top = `${this.cursorY - offsetTop - radius}px`;
-          circle.classList.add("ripple");
+                circle.style.width = circle.style.height = `${diameter}px`;
+                circle.style.left = `${this.cursorX - offsetLeft - radius}px`;
+                circle.style.top = `${this.cursorY - offsetTop - radius}px`;
+                circle.classList.add("ripple");
 
-          const ripple = this.button.getElementsByClassName("ripple")[0];
+                const ripple = this.button.getElementsByClassName("ripple")[0];
 
-          if (ripple) {
-              ripple.remove();
-              
-              
-          }
+                if (ripple) {
+                    ripple.remove();
 
-          this.button.appendChild(circle);
-      });
-  };
-}
 
-const buttons = $("button");
-for (const button of buttons) {
-  new Button(button);
-}
+                }
+
+                this.button.appendChild(circle);
+            });
+        };
+    }
+
+    const buttons = $("button");
+    for (const button of buttons) {
+        new Button(button);
+    }
 
 }
 
@@ -261,68 +263,230 @@ for (const button of buttons) {
 
 
 
+// if (typeof window !== 'undefined'){
+//         if (process.browser){
+
+//       const stickyVideoModule = document.querySelector(".sticky-video-module");
+//       const boxed = stickyVideoModule.querySelector(".boxed");
+//       const videoWrapper = stickyVideoModule.querySelector(".video");
+//       const video = stickyVideoModule.querySelector("#scroll-video-increase");
+
+//       const controller = new ScrollMagic.Controller();
+
+//       const scene = new ScrollMagic.Scene({
+//           duration: 1500,
+//           triggerElement: videoWrapper,
+//           triggerHook: 0
+//       })
+//           .addIndicators({ name: "init" })
+//           .setPin(videoWrapper)
+//           .addTo(controller);
+
+//       scene.on("update", (e) => {
+//           scrollPos = e.scrollPos / 1000;
+//       });
+
+//       scene.on("enter", () => {
+//           boxed.style.width = `${window.innerWidth}px`;
+//           boxed.style.paddingTop = "100px";
+//       });
+
+//       scene.on("end", (e) => {
+//           if ("FORWARD" === e.scrollDirection) {
+//               boxed.style.width = "100vw";
+//           }
+//       });
+
+//       // Scale Scene
+//       const scale_tween = gsap.timeline();
+//       scale_tween.from(video, {
+//           transform: " scale(1)",
+//           opacity: 1,
+//           duration: 0
+//       });
+//       scale_tween.to(video, {
+//           transform: " scale(1.5)",
+//           opacity: 1,
+//           duration: 1
+//       });
+//       const scene1 = new ScrollMagic.Scene({
+//           duration: 3000,
+//           triggerElement: videoWrapper,
+//           triggerHook: 0
+//       })
+//           .addIndicators({ name: "scene1" })
+//           .setTween(scale_tween)
+//           .addTo(controller);
+
+//     }
+
+// }
 
 
-if (typeof window !== 'undefined'){
-
-    if (typeof(controller) == 'undefined') {
-  
-      const stickyVideoModule = document.querySelector(".sticky-video-module");
-      const boxed = stickyVideoModule.querySelector(".boxed");
-      const videoWrapper = stickyVideoModule.querySelector(".video");
-      const video = stickyVideoModule.querySelector("video");
-  
-      const controller = new ScrollMagic.Controller();
-  
-      const scene = new ScrollMagic.Scene({
-          duration: 1500,
-          triggerElement: videoWrapper,
-          triggerHook: 0
-      })
-          .addIndicators({ name: "init" })
-          .setPin(videoWrapper)
-          .addTo(controller);
-  
-      scene.on("update", (e) => {
-          scrollPos = e.scrollPos / 1000;
-      });
-  
-      scene.on("enter", () => {
-          boxed.style.width = `${window.innerWidth}px`;
-          boxed.style.paddingTop = "100px";
-      });
-  
-      scene.on("end", (e) => {
-          if ("FORWARD" === e.scrollDirection) {
-              boxed.style.width = "100vw";
-          }
-      });
-  
-      // Scale Scene
-      const scale_tween = gsap.timeline();
-      scale_tween.from(video, {
-          transform: " scale(1)",
-          opacity: 1,
-          duration: 0
-      });
-      scale_tween.to(video, {
-          transform: " scale(1.5)",
-          opacity: 1,
-          duration: 1
-      });
-      const scene1 = new ScrollMagic.Scene({
-          duration: 3000,
-          triggerElement: videoWrapper,
-          triggerHook: 0
-      })
-          .addIndicators({ name: "scene1" })
-          .setTween(scale_tween)
-          // .addTo(controller);
-  
-    }}
-  
 
 // scroll magic gsap
 
 
+
+//video-remake-js
+
+// if (typeof window !== 'undefined'){
+//     if (process.browser){
+
+// var windowSize = $(window).width();
+
+// $( window ).resize(function() {
+//   windowSize = $(window).width();
+// });	
+
+
+
+//   if (windowSize > 767) {
+
+// 	var controller = new ScrollMagic.Controller();
+
+//  	var zoomHeader = TweenMax.to("#header", 0.5, {scale: 1.9, ease: Circ.EaseIn});
+
+// 	var zoomOne = TweenMax.to("#one", 0.5, {scale: 1, ease: Circ.EaseIn});
+//   var zoomTwo = TweenMax.to("#two", 0.5, {scale: 1.3, ease: Circ.EaseIn});
+//   var zoomThree = TweenMax.to("#three", 0.5, {scale: 1.6, ease: Circ.EaseIn});
+//  var zoomFour = TweenMax.to("#four", 0.5, {scale: 1.9, ease: Circ.EaseIn});
+
+
+// 	var headerZoom = new ScrollMagic.Scene({
+//     triggerElement: "#header", 
+//     triggerHook: 0, 
+//     duration: "300%"
+//   })
+//              .setPin('#header')
+//              .setClassToggle('#header', 'showing')
+// 					   .setTween(zoomHeader)
+//             .addIndicators({name: 'header zoom'})
+//     				 .addTo(controller);
+
+
+// 	var sceneOneZoom = new ScrollMagic.Scene({
+//     triggerElement: "#one", 
+//     triggerHook: 0,
+//     duration: "300%"
+//   })
+//              .setPin('#one')
+//              .setClassToggle('#one', 'showing')
+// 					   .setTween(zoomOne)
+//             .addIndicators({name: 'Scene 1 zoom'})
+//     				 .addTo(controller);
+
+
+// 	var sceneTwoZoom = new ScrollMagic.Scene({
+//     triggerElement: "#two", 
+//     triggerHook: 0,
+//     duration: "300%"
+//   })
+//              .setPin('#two')
+//              .setClassToggle('#two', 'showing')
+// 					   .setTween(zoomTwo)
+//             .addIndicators({name: 'Scene 2 zoom', indent: 400})
+//     				 .addTo(controller);
+
+
+// 	var sceneThreeZoom = new ScrollMagic.Scene({
+//     triggerElement: "#three", 
+//     triggerHook: 0, 
+//     duration: "300%"
+//   })
+//              .setPin('#three')
+//              .setClassToggle('#three', 'showing')
+// 					   .setTween(zoomThree)
+//             .addIndicators({name: 'Scene 3 zoom', indent: 800})
+//     				 .addTo(controller);
+
+// 	var sceneFourZoom = new ScrollMagic.Scene({
+//     triggerElement: "#four", 
+//     triggerHook: 0, 
+//     duration: "100%"
+//   })
+//              .setPin('#four')
+//              .setClassToggle('#four', 'showing')
+// 					   .setTween(zoomFour)
+//              .addIndicators({name: 'Scene 4 zoom'})
+//     				 .addTo(controller);
+
+// }
+
+// var documentHeight = document.body.clientHeight;
+// var windowHeight = $('#wow').height();
+// var bottomPoint = documentHeight - windowHeight;
+
+
+// $( window ).scroll(function() {
+//     var scrollTop = $(window).scrollTop();
+
+//     console.log(scrollTop);
+//     console.log(bottomPoint);
+
+//     if ( scrollTop > bottomPoint ) {
+//       $('#four a').addClass('email-showing');
+//     } else {
+//        $('#four a').removeClass('email-showing');
+//     }
+// });
+
+//     }}
+
+// videocrolltrial1 js
+
+// if (typeof window !== 'undefined') {
+//     if (process.browser) {
+
+//         if (document.querySelector('.orangeWrapper') || document.querySelector('.orange')) {
+
+
+
+//             gsap.registerPlugin(ScrollTrigger);
+
+
+
+//             // --- ORANGE PANEL ---
+
+//             const tl = gsap.timeline({
+//                 scrollTrigger: {
+//                     trigger: ".orangeWrapper",
+//                     scrub: true,
+//                     pin: true,
+
+//                     start: "50% 50%",
+//                     end: "+=200%"
+//                 }
+//             })
+
+//                 .from(".orange", {
+//                     scale: 0.5,
+//                     ease: "none"
+//                 })
+
+//                 .from(".line-2", {
+//                     scaleX: 0,
+//                     ease: "none",
+//                     transformOrigin: "left top"
+//                 }, 0)
+
+//         }
+//     }
+// }
+
+// videocrolltrial2 js
+
+if (typeof window !== 'undefined') {
+    if (process.browser) {
+
+$(function() {
+
+    $(window).scroll(function() {
+  
+      var mass = Math.min(20, 1+0.005*$(this).scrollTop());
+  
+      $('#expandable').css('transform', 'scale(' + mass + ')');
+    });
+  });
+}}
 

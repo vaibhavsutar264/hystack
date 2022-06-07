@@ -5,15 +5,15 @@ import React from 'react'
 function Upgrade() {
     return (
         <section name="upgrade">
-            <div class="upgrade-main">
+            <div className="upgrade-main">
                 <div>
-                    <h2 class="upgrade-heading">
+                    <h2 className="upgrade-heading">
                         Upgrade your lab<br />
                         without hassle
                     </h2>
-                    <p class="upgrade-para">Some detail about the test</p>
-                    <p class="upgrade-para">Some detail about the test</p>
-                    <button class="btn-test">View UID Test</button>
+                    <p className="upgrade-para">Some detail about the test</p>
+                    <p className="upgrade-para">Some detail about the test</p>
+                    <button className="btn-test">View UID Test</button>
                 </div>
                 <div className='upgrade-img'>
                     {/* <img  src={image} alt="" /> */}

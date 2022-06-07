@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 // import ScriptTag from 'react-script-tag';
 // import { Helmet } from "react-helmet";
 // import $ from 'jquery';
-import Script from 'next/script'
+import Script from 'next/script';
 // import Head from 'next/head';
 // Create the function
 // export function AddLibrary(urlOfTheLibrary) {

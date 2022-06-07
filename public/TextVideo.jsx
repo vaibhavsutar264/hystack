@@ -16,10 +16,10 @@ const textVideo = () => {
             </Head>
             <main className="flexbox">
                 <div className="button-wrapper link">
-                    {/* <button type="button" className="button btn-primary "> */}
+                    <button type="button" className="button btn-primary ">
                         <div className="relative">
                             <h2 id='text-video-h2'>
-                                <span className="relative" >B</span>
+                                <span className="" >B</span>
                                 <span >U</span>
                                 <span className="span1" >I</span>
                                 <span >L</span>
@@ -102,7 +102,7 @@ const textVideo = () => {
                         </div>
 
                         <div className="btn-secondary"></div>
-                    {/* </button> */}
+                    </button>
                 </div>
             </main>
 
