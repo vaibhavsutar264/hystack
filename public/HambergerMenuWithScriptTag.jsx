@@ -20,7 +20,7 @@ const HambergerMenuWithScriptTag = () => {
                 <script src="app.js"></script>
             </Head> */}
                 <input  type="checkbox" id="bgtoggle" />
-                <div className="frame">
+                <div className="frame" id="frame">
                     <label htmlFor="bgtoggle" className="menu"></label>
                     <div className="menu_container" id="menu_container">
                         <h1>hystack content will be shown here</h1>

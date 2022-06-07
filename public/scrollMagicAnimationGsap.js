@@ -25,6 +25,14 @@
  * @requires {@link http://greensock.com/gsap|GSAP ~1.14.x}
  * @mixin animation.GSAP
  */
+import '../public/scrollMagicGsap.js';
+ import '../public/tweenMax';
+ import '../public/gsapMinVideoScrollTrial1.js';
+ import '../public/scrollMagicIndicators.js';
+
+
+
+
 (function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.

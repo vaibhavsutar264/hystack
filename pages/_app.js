@@ -1,17 +1,20 @@
 import '../styles/globals.css';
 // import $ from 'jquery';
 // import Script from 'next/script';
+import Link from 'next/link';
 {/* <Script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></Script>; */}
 
 {/* <Link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400,600' rel='stylesheet' type='text/css'></Link>;
 <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" ></Link>;
 <Link rel='stylesheet' href='https://codepen.io/GreenSock/pen/ZEGdQLM/7ba936b34824fefdccfe2c6d9f0b740b.css' ></Link>; */}
-// import '../public/tweenMax';
 
-// import '../public/scrollMagic';
-// import '../public/scrollMagicIndicators';
-// import '../public/scrollMagicGsap';
+
+import '../public/scrollMagic';
+import '../public/scrollMagicIndicators';
+import '../public/scrollMagicGsap';
+import '../public/tweenMax';
 // import '../public/scrollMagicAnimationGsap';
+
 
 // import {ScrollMagic} from "scrollmagic";
 // import { gsap, TimelineMax } from "gsap";
@@ -19,8 +22,14 @@ import '../styles/globals.css';
 
 // import '../public/gsapMinVideoScrollTrial';
 // import '../public/scrollTriggerMinVideoScrollTrial1';
-// import '../public/jquerry.js';
+import '../public/jquerry.js';
+import '../public/gsapMinVideoScrollTrial1.js';
+import '../public/scrollTriggerMinVideoScrollTrial1.js';
 import '../public/src';
+
+// import '../src/style/cloudFareAjaxVideoScrollTrial1.css';
+// import '../src/style/googleApisVideoScrollTrial1.css';
+// import '../src/style/greenSockVideoScrollTrial1.css';
 
 
 // import '../public/gsapMin';
@@ -56,7 +65,7 @@ import WeGotCovered from "../src/components/WeGotCovered";
 import Footer from "../src/components/Footer";
 
 // import Video from "../public/Video";
-// import VideoRemake from "../public/VideoRemake";
+import VideoRemake from "../public/VideoRemake";
 // import VideoScrollTrial1 from "../public/VideoScrollTrial1";
 // import VideoScrollTrial from "../public/VideoScrollTrial";
 // import HambergerMenuWithJQuery from "../src/components/HambergerMenuWithJQuery";
@@ -78,7 +87,7 @@ function MyApp({ Component, pageProps }) {
       <Precision/>
       <WeGotCovered/>
       {/* <Video/> */}
-      {/* <VideoRemake/> */}
+      <VideoRemake/>
       {/* <VideoScrollTrial1/> */}
       {/* <VideoScrollTrial/> */}
       <hr/>

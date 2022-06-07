@@ -1,4 +1,4 @@
-
+import ScrollMagic from "scrollmagic";
 
 /**
  * The main class that is needed once per scroll container.

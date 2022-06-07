@@ -1,23 +1,30 @@
-// import {ScrollMagic} from "scrollmagic";
+import ScrollMagic from "scrollmagic";
+// import { Controller, Scene } from 'react-scrollmagic';
 // import Controller from 'scrollmagic';
 // import Link from 'next/link';
 import $ from 'jquery';
 {/* <Link href="https://scrollmagic.io/docs/ScrollMagic_Controller.js.html"></Link>; */ }
 // window.jQuery = $;
 // import './controller';
+import '../public/scrollMagic';
+import '../public/scrollMagicIndicators';
+import '../public/scrollMagicGsap';
+import '../public/tweenMax';
 
 
 
 if (typeof window !== 'undefined') {
     // if (process.browser) {
-        let abc = document.getElementsByClassName('menu_container'); 
+        // let frame = document.getElementsByClassName('.frame'); 
 
         document.addEventListener("DOMContentLoaded", function(){
             var navToggle = document.getElementById("bgtoggle");
             var navMenu = document.getElementById("menu_container");
+            var frameMenu = document.getElementById('frame');
             navToggle.addEventListener("click", function(e){
               // navMenu.classList.toggle("open");
               navMenu.style.opacity="1";
+              frameMenu.style.height="1000px";
             });
         });
     // }
@@ -325,7 +332,9 @@ if (typeof window !== 'undefined') {
 
 
 // scroll magic gsap
-
+{/* <Scene duration={600} pin>
+<div>Sticky Example</div>
+</Scene> */}
 
 
 //video-remake-js
@@ -333,6 +342,7 @@ if (typeof window !== 'undefined') {
 // if (typeof window !== 'undefined'){
 //     if (process.browser){
 
+    
 // var windowSize = $(window).width();
 
 // $( window ).resize(function() {
@@ -476,17 +486,17 @@ if (typeof window !== 'undefined') {
 
 // videocrolltrial2 js
 
-if (typeof window !== 'undefined') {
-    if (process.browser) {
+// if (typeof window !== 'undefined') {
+//     if (process.browser) {
 
-$(function() {
+// $(function() {
 
-    $(window).scroll(function() {
+//     $(window).scroll(function() {
   
-      var mass = Math.min(20, 1+0.005*$(this).scrollTop());
+//       var mass = Math.min(20, 1+0.005*$(this).scrollTop());
   
-      $('#expandable').css('transform', 'scale(' + mass + ')');
-    });
-  });
-}}
+//       $('#expandable').css('transform', 'scale(' + mass + ')');
+//     });
+//   });
+// }}
 
