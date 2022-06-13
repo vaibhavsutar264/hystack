@@ -1,18 +1,16 @@
 import '../styles/globals.css';
 // import $ from 'jquery';
 // import Script from 'next/script';
-import Link from 'next/link';
-{/* <Script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></Script>; */}
+// import Link from 'next/link';
 
 {/* <Link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400,600' rel='stylesheet' type='text/css'></Link>;
 <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" ></Link>;
 <Link rel='stylesheet' href='https://codepen.io/GreenSock/pen/ZEGdQLM/7ba936b34824fefdccfe2c6d9f0b740b.css' ></Link>; */}
 
 
-import '../public/scrollMagic';
-import '../public/scrollMagicIndicators';
-import '../public/scrollMagicGsap';
-import '../public/tweenMax';
+// import '../public/scrollMagic';
+// import '../public/scrollMagicIndicators';
+// import '../public/scrollMagicGsap';
 // import '../public/scrollMagicAnimationGsap';
 
 
@@ -22,9 +20,9 @@ import '../public/tweenMax';
 
 // import '../public/gsapMinVideoScrollTrial';
 // import '../public/scrollTriggerMinVideoScrollTrial1';
-import '../public/jquerry.js';
-import '../public/gsapMinVideoScrollTrial1.js';
-import '../public/scrollTriggerMinVideoScrollTrial1.js';
+import '../public/jquerry';
+// import '../public/gsapMinVideoScrollTrial1.js';
+// import '../public/scrollTriggerMinVideoScrollTrial1.js';
 import '../public/src';
 
 // import '../src/style/cloudFareAjaxVideoScrollTrial1.css';
@@ -53,18 +51,20 @@ import '../public/src';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js';
-import data from "../src/data/data.json";
+// import data from "../src/data/data.json";
 import HambergerMenuWithScriptTag from "../public/HambergerMenuWithScriptTag";
-import Navbar from "../src/components/Navbar";
-import OurPartners from "../src/components/OurPartners";
+// import NavbarContent from "../public/NavbarContent";
+// import Navbar from "../src/components/Navbar";
+// import OurPartners from "../src/components/OurPartners";
 import TextVideo from "../public/textVideo";
 // import About from "./About";
 import Precision from "../src/components/Precision";
-import Upgrade from "../src/components/Upgrade";
-import WeGotCovered from "../src/components/WeGotCovered";
-import Footer from "../src/components/Footer";
+import Upgrade from "../public/Upgrade";
+import WeGotCovered from "../public/WeGotCovered";
+import Footer from "../public/Footer";
 
 // import Video from "../public/Video";
+import MouseMoveScroll from "../public/MouseMoveScroll";
 import VideoRemake from "../public/VideoRemake";
 // import VideoScrollTrial1 from "../public/VideoScrollTrial1";
 // import VideoScrollTrial from "../public/VideoScrollTrial";
@@ -79,15 +79,22 @@ function MyApp({ Component, pageProps }) {
     <>
     
     {/* <HambergerMenuWithJQuery/> */}
+    
     <HambergerMenuWithScriptTag />
-      <Navbar/>
+
+      {/* <Navbar/> */}
       <TextVideo/>
+      {/* <NavbarContent/> */}
+      <VideoRemake/>
       <Upgrade/>
-      <OurPartners ourPartner={data.ourPartner} />
+      {/* <OurPartners ourPartner={data.ourPartner} /> */}
+      <MouseMoveScroll/>
       <Precision/>
+      
       <WeGotCovered/>
       {/* <Video/> */}
-      <VideoRemake/>
+      
+      
       {/* <VideoScrollTrial1/> */}
       {/* <VideoScrollTrial/> */}
       <hr/>

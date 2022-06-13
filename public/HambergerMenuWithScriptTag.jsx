@@ -3,6 +3,8 @@ import React from 'react';
 // import { Helmet } from "react-helmet";
 // import $ from 'jquery';
 import Script from 'next/script';
+import data from "../src/data/data.json";
+import NavbarContent from "./NavbarContent";
 // import Head from 'next/head';
 // Create the function
 // export function AddLibrary(urlOfTheLibrary) {
@@ -16,14 +18,18 @@ const HambergerMenuWithScriptTag = () => {
     return (
         <>
             <div >
+                    
             {/* <Head>
                 <script src="app.js"></script>
             </Head> */}
                 <input  type="checkbox" id="bgtoggle" />
                 <div className="frame" id="frame">
+                <a  >
+                        <img id="hamberger-menu-logo" src={data.logo} alt="logo" />
+                    </a>
                     <label htmlFor="bgtoggle" className="menu"></label>
                     <div className="menu_container" id="menu_container">
-                        <h1>hystack content will be shown here</h1>
+                        <NavbarContent/>
                     </div>
                 </div>
                 <Script src="src.js" strategy="lazyOnload"></Script>

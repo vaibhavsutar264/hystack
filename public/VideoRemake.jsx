@@ -1,5 +1,6 @@
 import React from 'react';
 import Script from 'next/script';
+// import { Controller, Scene } from 'react-scrollmagic';
 
 const VideoRemake = () => {
     return (

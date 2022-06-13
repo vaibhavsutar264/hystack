@@ -14,99 +14,68 @@ const textVideo = () => {
                 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"></link>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
             </Head>
-            <main className="flexbox">
-                <div className="button-wrapper link">
-                    <button type="button" className="button btn-primary ">
+            <main className="flexbox" id="flexbox">
+                <div className="button-wrapper link" id="button-wrapper">
                         <div className="relative">
                             <h2 id='text-video-h2'>
-                                <span className="" >B</span>
-                                <span >U</span>
-                                <span className="span1" >I</span>
-                                <span >L</span>
-                                <span >D</span>
-                                <span >I</span>
-                                <span >N</span>
-                                <span >G   </span>
-                                <span className="spacing" >T</span>
-                                <span >H</span>
-                                <span >E </span>
-                                <br />
-                                <span className="spacing-extra" >F</span>
-                                <span >U</span>
-                                <span >T</span>
-                                <span >U</span>
-                                <span >R</span>
-                                <span >E</span>
-                                <span className="spacing" >B</span>
-                                <span >U</span>
-                                <span >I</span>
-                                <span >L</span>
-                                <span >D</span>
-                                <span >I</span>
-                                <span >N</span>
-                                <span >G </span>
-                                <br />
-                                <span className="spacing" >T</span>
-                                <span >H</span>
-                                <span >E </span>
-                                <span className="spacing" >F</span>
-                                <span >U</span>
-                                <span >T</span>
-                                <span >U</span>
-                                <span >R</span>
-                                <span >E</span>
-                                {/* <span className="" onmouseover="setVideo()" onmouseout="noVideo()">B</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">U</span>
-                                <span className="span1" onmouseover="setVideo1()" onmouseout="noVideo1()">I</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">L</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">D</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">I</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">N</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">G   </span>
-                                <span className="spacing" onmouseover="setVideo()" onmouseout="noVideo()">T</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">H</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">E </span>
-                                <br />
-                                <span className="spacing-extra" onmouseover="setVideo()" onmouseout="noVideo()">F</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">U</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">T</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">U</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">R</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">E</span>
-                                <span className="spacing" onmouseover="setVideo()" onmouseout="noVideo()">B</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">U</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">I</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">L</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">D</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">I</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">N</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">G </span>
-                                <br />
-                                <span className="spacing" onmouseover="setVideo()" onmouseout="noVideo()">T</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">H</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">E </span>
-                                <span className="spacing" onmouseover="setVideo()" onmouseout="noVideo()">F</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">U</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">T</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">U</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">R</span>
-                                <span onmouseover="setVideo()" onmouseout="noVideo()">E</span> */}
+                                <span className="">I</span>
+                                <span>N</span>
+                                <span>F</span>
+                                <span>E</span>
+                                <span>C</span>
+                                <span>T</span>
+                                <span>I</span>
+                                <span>0</span>
+                                <span>U</span>
+                                <span>S    </span>
+                                <span>D</span>                              
+                                <span>E</span>
+                                <span>S</span>
+                                <span>E</span>
+                                <span>A</span>
+                                <span>S</span>
+                                <span>E</span>
+                                <span>S </span>
+                                <span className="spacing" >W</span>
+                                <span>O</span>
+                                <span>U</span>
+                                <span>L</span>
+                                <span>D</span>
+                                <span>N</span>
+                                <span>'</span>
+                                <span>T </span>
+                                <span className="spacing" >K</span>
+                                <span>I</span>
+                                <span>L</span>
+                                <span>L </span>
+                                <span className="spacing">A</span>
+                                <span>N</span>
+                                <span>Y</span>
+                                <span>M</span>
+                                <span>O</span>
+                                <span>R</span>
+                                <span>E</span>
+                                
                             </h2>
                             <video id="banner" type="video/mp4" muted autoPlay loop >
                                 <source src="istockphoto-454669794-640_adpp_is.mp4" />
                             </video>
+                            
 
                              {/* <video src={require('./istockphoto-454669794-640_adpp_is.mp4')}  id="banner" type="video/mp4" autoPlay loop /> */}
 
                             {/* <video src="istockphoto-454669794-640_adpp_is.mp4" id="banner" type="video/mp4" muted loop autoPlay></video> */}
                         </div>
+                        
 
                         <div className="btn-secondary"></div>
-                    </button>
                 </div>
+                
             </main>
+            <div><h2 id='text-video-h6'> Avoid Avoidable Deaths with The Haystack UID test</h2></div>
 
             <div className="cursor"></div>
+
             <Script src="src.js" strategy="lazyOnload"></Script>
             <Script src="gsapMin.js" strategy="lazyOnload"></Script>
             <Script src="jquerry.js" strategy="lazyOnload"></Script>

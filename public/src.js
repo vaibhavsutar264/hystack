@@ -1,4 +1,4 @@
-import ScrollMagic from "scrollmagic";
+// import ScrollMagic from "scrollmagic";
 // import { Controller, Scene } from 'react-scrollmagic';
 // import Controller from 'scrollmagic';
 // import Link from 'next/link';
@@ -6,29 +6,54 @@ import $ from 'jquery';
 {/* <Link href="https://scrollmagic.io/docs/ScrollMagic_Controller.js.html"></Link>; */ }
 // window.jQuery = $;
 // import './controller';
-import '../public/scrollMagic';
-import '../public/scrollMagicIndicators';
-import '../public/scrollMagicGsap';
-import '../public/tweenMax';
+// import '../public/scrollMagic';
+// import '../public/scrollMagicIndicators';
+// import '../public/scrollMagicGsap';
+// import '../public/tweenMax';
 
 
 
 if (typeof window !== 'undefined') {
-    // if (process.browser) {
+    if (process.browser) {
         // let frame = document.getElementsByClassName('.frame'); 
 
         document.addEventListener("DOMContentLoaded", function(){
+            var flexboxOFTextVideo = document.getElementById("button-wrapper");
+            var frame = document.getElementById("frame");
             var navToggle = document.getElementById("bgtoggle");
             var navMenu = document.getElementById("menu_container");
-            var frameMenu = document.getElementById('frame');
+            // var frameMenu = document.getElementById('frame');
+
             navToggle.addEventListener("click", function(e){
-              // navMenu.classList.toggle("open");
+            //   navMenu.classList.toggle("open");
+            
+            //   flexboxOFTextVideo.classList.toggle("open");
+            //   frame.classList.toggle("open");
+            //   flexboxOFTextVideo.style.opacity="0";
               navMenu.style.opacity="1";
-              frameMenu.style.height="1000px";
+            //   frame.style.zIndex="9999999999999999999999999";
+            //   navMenu.style.zIndex="999999999";
+              
+            //   frameMenu.style.height="1000px";
+
             });
         });
-    // }
+    }
 }
+
+
+// if (process.browser){
+//     let abc = $('.menu_container'); 
+
+// $("DOMContentLoaded", function(){
+// var navToggle = $("#bgtoggle");
+// var navMenu = $("#menu_container");
+// navToggle.click,(function(e){
+// //   navMenu.classList.toggle("open");
+//   navMenu.css("opacity","1");
+// //   console.log(abc);
+// });
+// });}
 
 //   const stickyVideoModule = document.querySelector(".sticky-video-module");
 // const boxed = stickyVideoModule.querySelector(".boxed");
@@ -500,3 +525,21 @@ if (typeof window !== 'undefined') {
 //   });
 // }}
 
+
+// mousemove scroll
+
+if (typeof window !== 'undefined') {
+    if (process.browser) {
+var windowWidth = $(window).width();
+    
+$('.page-container').mousemove(function(event){
+
+    var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+    $('.page-back').css('margin-left', moveX + 'px');
+});
+$('.page-container').mouseout(function(event){
+
+    var moveX = (($(window).width() / 2) + event.pageX) * 0.1;
+    $('.page-back').css('margin-left', moveX - 'px');
+});
+    }}
