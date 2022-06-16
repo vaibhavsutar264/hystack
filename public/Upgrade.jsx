@@ -5,7 +5,7 @@ function Upgrade() {
         <section name="upgrade">
             <div className="upgrade-main row">
                 <div className="col-6 d-flex floating-purpose">
-                    <div className="m-auto">
+                    <div className="m-auto upgrade-left">
                         <h2 className="upgrade-heading">
                             Upgrade your lab<br />
                             without hassle

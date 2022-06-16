@@ -10,8 +10,18 @@ import '../styles/globals.css';
 
 // import '../public/scrollMagic';
 // import '../public/scrollMagicIndicators';
+// import '../public/tweenMax';
+// import { TimelineMax, Sine } from '../public/tweenMax';
+// import ScrollMagic from 'scrollmagic';
+// import '../public/scrollMagicAnimationGsap';
+// import 'debug.addIndicators'
+
+// import '../public/scrollmagicFromStackOverFlow';
+// import '../public/scrollmagicDebugFromStackOverFlow';
 // import '../public/scrollMagicGsap';
 // import '../public/scrollMagicAnimationGsap';
+
+
 
 
 // import {ScrollMagic} from "scrollmagic";
@@ -24,6 +34,7 @@ import '../public/jquerry';
 // import '../public/gsapMinVideoScrollTrial1.js';
 // import '../public/scrollTriggerMinVideoScrollTrial1.js';
 import '../public/src';
+import '../public/Footer';
 
 // import '../src/style/cloudFareAjaxVideoScrollTrial1.css';
 // import '../src/style/googleApisVideoScrollTrial1.css';

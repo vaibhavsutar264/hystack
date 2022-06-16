@@ -18,61 +18,79 @@ const textVideo = () => {
                 <div className="button-wrapper link" id="button-wrapper">
                         <div className="relative">
                             <h2 id='text-video-h2'>
-                                <span className="">I</span>
-                                <span>N</span>
-                                <span>F</span>
-                                <span>E</span>
-                                <span>C</span>
-                                <span>T</span>
+                            <div className="text-1 text-video-text">
                                 <span>I</span>
-                                <span>0</span>
-                                <span>U</span>
-                                <span>S    </span>
+                                <span>n</span>
+                                <span>f</span>
+                                <span>e</span>
+                                <span>c</span>
+                                <span>t</span>
+                                <span>i</span>
+                                <span>o</span>
+                                <span>u</span>
+                                <span>s </span>
+                                
+                            </div>
+                            <div className="text-2 text-video-text">
                                 <span>D</span>                              
-                                <span>E</span>
-                                <span>S</span>
-                                <span>E</span>
-                                <span>A</span>
-                                <span>S</span>
-                                <span>E</span>
-                                <span>S </span>
+                                <span>i</span>
+                                <span>s</span>
+                                <span>e</span>
+                                <span>a</span>
+                                <span>s</span>
+                                <span>e</span>
+                                <span>s </span>
+                               
+                            </div>
+                            <div className="text-3 text-video-text">
                                 <span className="spacing" >W</span>
-                                <span>O</span>
-                                <span>U</span>
-                                <span>L</span>
-                                <span>D</span>
-                                <span>N</span>
+                                <span>o</span>
+                                <span>u</span>
+                                <span>l</span>
+                                <span>d</span>
+                                <span>n</span>
                                 <span>'</span>
-                                <span>T </span>
-                                <span className="spacing" >K</span>
-                                <span>I</span>
-                                <span>L</span>
-                                <span>L </span>
-                                <span className="spacing">A</span>
-                                <span>N</span>
-                                <span>Y</span>
-                                <span>M</span>
-                                <span>O</span>
-                                <span>R</span>
-                                <span>E</span>
+                                <span>t </span>
+                            </div>
+                            <div className="text-4 text-video-text">
+                            <span className="spacing" >K</span>
+                                <span>i</span>
+                                <span>l</span>
+                                <span>l </span>
+                            <span className="spacing">A</span>
+                                <span>n</span>
+                                <span>y</span>
+                                <span>m</span>
+                                <span>o</span>
+                                <span>r</span>
+                                <span>e</span>
+                            
+                            
+                            </div>
+                            
+                               
+                               
                                 
                             </h2>
                             <video id="banner" type="video/mp4" muted autoPlay loop >
                                 <source src="istockphoto-454669794-640_adpp_is.mp4" />
                             </video>
                             
+                            
 
                              {/* <video src={require('./istockphoto-454669794-640_adpp_is.mp4')}  id="banner" type="video/mp4" autoPlay loop /> */}
 
                             {/* <video src="istockphoto-454669794-640_adpp_is.mp4" id="banner" type="video/mp4" muted loop autoPlay></video> */}
                         </div>
+                        <div><h2 id='text-video-h6'> Avoid Avoidable Deaths with The Haystack UID test</h2></div>
+                        
                         
 
                         <div className="btn-secondary"></div>
                 </div>
                 
             </main>
-            <div><h2 id='text-video-h6'> Avoid Avoidable Deaths with The Haystack UID test</h2></div>
+            
 
             <div className="cursor"></div>
 

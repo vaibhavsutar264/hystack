@@ -17,7 +17,7 @@ import NavbarContent from "./NavbarContent";
 const HambergerMenuWithScriptTag = () => {
     return (
         <>
-            <div >
+            <div className="nav-menu-margin" >
                     
             {/* <Head>
                 <script src="app.js"></script>

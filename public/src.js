@@ -1,4 +1,9 @@
-// import ScrollMagic from "scrollmagic";
+import ScrollMagic from "scrollmagic";
+
+// import './tweenMax';
+// import { TimelineMax} from 'gsap/src/uncompressed/TweenMax.js';
+// import './scrollmagicFromStackOverFlow';
+// import './scrollmagicDebugFromStackOverFlow';
 // import { Controller, Scene } from 'react-scrollmagic';
 // import Controller from 'scrollmagic';
 // import Link from 'next/link';
@@ -293,7 +298,7 @@ if (typeof window !== 'undefined') {
 
 
 
-
+// video.jsx js code scrollmagic
 
 // if (typeof window !== 'undefined'){
 //         if (process.browser){
