@@ -1121,15 +1121,21 @@ body {
   margin: auto;
 }
 
+.video-scroll-trial{
+  height: 2000px;
+  text-align: center;
+}
+
 
 #expandable {
   width: 100vw; 
   height: 100vh;
   text-align: center;
-  position: fixed;
+  position: sticky;
   font-size: 5vw;
   transform-origin: center top;
 }
+
 
 
 

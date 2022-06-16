@@ -4,7 +4,7 @@ import Script from 'next/script';
 const VideoScrollTrial = () => {
     return (
         <div>
-            <div >Kill the PDF</div>
+            <div className="video-scroll-trial" id="expandable" >Kill the PDF</div>
 
             <div><h1>abcsdjk</h1></div>
   <Script src='jquerry.js'></Script>

@@ -15,11 +15,11 @@ const VideoRemake = () => {
 <Script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js'></Script> */}
   <Script src='jquerry.js'></Script>
 
-<Script src='scrollMagic.js'></Script>
-<Script src='scrollMagicAnimationGsap.js'></Script>
-<Script src='scrollMagicIndicators.js'></Script>
+{/* <Script src='scrollMagic.js'></Script> */}
+{/* <Script src='scrollMagicAnimationGsap.js'></Script> */}
+{/* <Script src='scrollMagicIndicators.js'></Script> */}
 <Script  src="src.js"></Script>
-<Script src='tweenMax.js'></Script>
+{/* <Script src='tweenMax.js'></Script> */}
 
 </div>
             

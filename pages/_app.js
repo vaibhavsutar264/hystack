@@ -15,6 +15,7 @@ import '../styles/globals.css';
 // import ScrollMagic from 'scrollmagic';
 // import '../public/scrollMagicAnimationGsap';
 // import 'debug.addIndicators'
+// import { TweenMax, TimelineMax, Linear } from "gsap";
 
 // import '../public/scrollmagicFromStackOverFlow';
 // import '../public/scrollmagicDebugFromStackOverFlow';
@@ -97,6 +98,7 @@ function MyApp({ Component, pageProps }) {
       <TextVideo/>
       {/* <NavbarContent/> */}
       <VideoRemake/>
+      {/* <VideoScrollTrial/> */}
       <Upgrade/>
       {/* <OurPartners ourPartner={data.ourPartner} /> */}
       <MouseMoveScroll/>
@@ -107,7 +109,7 @@ function MyApp({ Component, pageProps }) {
       
       
       {/* <VideoScrollTrial1/> */}
-      {/* <VideoScrollTrial/> */}
+      
       <hr/>
       <Footer/>
     </>

@@ -1,4 +1,4 @@
-import ScrollMagic from "scrollmagic";
+// import ScrollMagic from "scrollmagic";
 
 // import './tweenMax';
 // import { TimelineMax} from 'gsap/src/uncompressed/TweenMax.js';
@@ -514,7 +514,7 @@ if (typeof window !== 'undefined') {
 //     }
 // }
 
-// videocrolltrial2 js
+// videocrolltrial js
 
 // if (typeof window !== 'undefined') {
 //     if (process.browser) {

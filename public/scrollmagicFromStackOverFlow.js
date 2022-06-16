@@ -21,6 +21,11 @@ Greensock License info at http://www.greensock.com/licensing/
 @todo: bug: having multiple scroll directions with cascaded pins doesn't work (one scroll vertical, one horizontal)
 @todo: feature: optimize performance on debug plugin (huge drawbacks, when using many scenes)
 */
+
+
+import { TweenMax, TimelineMax, Linear } from "gsap";
+// import './jquerry';
+import $ from 'jquery';
 (function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
