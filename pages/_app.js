@@ -70,7 +70,7 @@ import HambergerMenuWithScriptTag from "../public/HambergerMenuWithScriptTag";
 // import OurPartners from "../src/components/OurPartners";
 import TextVideo from "../public/textVideo";
 // import About from "./About";
-import Precision from "../src/components/Precision";
+import Precision from "../public/Precision";
 import Upgrade from "../public/Upgrade";
 import WeGotCovered from "../public/WeGotCovered";
 import Footer from "../public/Footer";
@@ -78,6 +78,8 @@ import Footer from "../public/Footer";
 // import Video from "../public/Video";
 import MouseMoveScroll from "../public/MouseMoveScroll";
 import VideoRemake from "../public/VideoRemake";
+import { motion } from 'framer-motion';
+// import { ScrollContainer, ScrollPage, Animator, FadeOut, ZoomOut, batch, ZoomIn } from 'react-scroll-motion';
 // import VideoScrollTrial1 from "../public/VideoScrollTrial1";
 // import VideoScrollTrial from "../public/VideoScrollTrial";
 // import HambergerMenuWithJQuery from "../src/components/HambergerMenuWithJQuery";
@@ -85,6 +87,8 @@ import VideoRemake from "../public/VideoRemake";
 // import React, { useEffect } from 'react'
 // import Script from 'next/script'
 // import $ from 'jquery';
+
+// const ZoomOutScrollOut = batch(ZoomOut(-50) ,ZoomIn(50));
 
 function MyApp({ Component, pageProps }) {
   return(
@@ -95,16 +99,35 @@ function MyApp({ Component, pageProps }) {
     <HambergerMenuWithScriptTag />
 
       {/* <Navbar/> */}
+      <div className="section" data-bg="white">
       <TextVideo/>
+      </div>
       {/* <NavbarContent/> */}
+      <div className="section" data-bg="white">
       <VideoRemake/>
+      </div>
+      
       {/* <VideoScrollTrial/> */}
+      {/* <ScrollContainer>
+        <ScrollPage>
+          <Animator animation={ZoomOutScrollOut}> */}
+          <div className="section" data-bg="rgb(20, 20, 20)">
       <Upgrade/>
+      </div>
+      {/* </Animator>
+      </ScrollPage>
+      </ScrollContainer> */}
       {/* <OurPartners ourPartner={data.ourPartner} /> */}
+      <div className="section" data-bg="rgb(36, 101, 237)">
       <MouseMoveScroll/>
+      </div>
+      <div className="section" data-bg="rgb(36, 101, 237)">
       <Precision/>
+      </div>
+      <div className="section" data-bg="white" >
       
       <WeGotCovered/>
+      </div>
       {/* <Video/> */}
       
       

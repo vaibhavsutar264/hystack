@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import Script from 'next/script';
 
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const topBottomVariants = {   
+    visible: { opacity: 1, scale: 1, transition: { delay:0,duration:2 } },
+    hidden: { opacity: 0.5, scale: 0.5 }
+  };
+
+
 const MouseMoveScroll = () => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      }
+    }, [controls, inView]);
     return (
         <> <h1 className="heading">OUR PARTNERS </h1>
-            <div className="page-container">
+            < motion.div  ref={ref} animate={controls} initial="hidden" variants={topBottomVariants}  className="page-container">
             
             <div className="page-back">
                     <div id="example">
@@ -38,7 +54,7 @@ const MouseMoveScroll = () => {
         
         
         
-        </div>
+        </motion.div>
         </>
     )
 }

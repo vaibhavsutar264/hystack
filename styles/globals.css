@@ -5,6 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     /* opacity: 0; */
+    transition: background 1s ease-in-out;
 }
 
 
@@ -500,12 +501,13 @@ color: black;
 } */
 
 .precision-bg{
-  background-image: url('../src/components/precision-bg-true.png');
+  background-image: url('../src/waste-jsx-files/precision-bg-true.png');
   object-fit: cover;
   background-color: rgba(0, 0, 0, 0.267);
   background-blend-mode: multiply;
   padding-bottom: 100px;
   margin: 40px 130px;
+  margin-top: 100px;
 }
 
 .precision-button-left{
@@ -755,6 +757,7 @@ color: black;
   padding: 80px;  
   /* display: block; */
   margin: 40px 130px;
+  margin-top: 260px;
 }
 
 .upgrade-heading {
@@ -1113,13 +1116,12 @@ body {
 }
 
 
-#scroll-video-increase {
+/* #scroll-video-increase {
   width: 90%;
   height: 70vh;
   display: block;
-  /* padding-left: 500px; */
   margin: auto;
-}
+} */
 
 .video-scroll-trial{
   height: 2000px;
@@ -1223,12 +1225,47 @@ body {
     
   }
 
+  #scroll-video-increase {
+    position: sticky;
+    top: 20%;
+    height: 40vh;
+    /* left: 50%; */
+    /* margin-top: -50px;
+    margin-left: -50px; */
+  
+    animation: scale 0.5s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -0.5s);
+  
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    /* margin: 50px; */
+    padding: 10px;
+    /* border: 10px solid black; */
+    /* margin-bottom: 400px; */
+    /* padding: 100px; */
+    /* padding-bottom: 50px; */
+  }
+  
+  @keyframes scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2.7);
+    }
+  }
+  
+  .showing {
+    min-height: 200vh;
+  }
+
 
   @media (min-width:1200px){
 
     #scroll-video-increase {
       width: 90%;
-      height: 70vh;
+      height: 60vh;
       display: block;
       /* padding-left: 500px; */
       margin: auto;
@@ -1251,9 +1288,11 @@ body {
     }
 
     #scroll-video-increase{
-      width: 100%;
-      height: 100%;
-      padding-left: 0px;
+      width: 90%;
+      height: 60vh;
+      display: block;
+      /* padding-left: 500px; */
+      margin: auto;
     }
     .upgrade-main {
       width: 85%;
@@ -1383,9 +1422,11 @@ body {
 
 
     #scroll-video-increase{
-      width: 100%;
-      height: 100%;
-      padding-left: 0px;
+      width: 90%;
+      height: 60vh;
+      display: block;
+      /* padding-left: 500px; */
+      margin: auto;
     }
     .upgrade-main {
       width: 85%;
@@ -1894,3 +1935,9 @@ body {
   font-size: 18px;
 }
   }
+
+/* .section{
+  background-color: red;
+} */
+
+  

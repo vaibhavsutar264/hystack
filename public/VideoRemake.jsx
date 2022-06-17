@@ -6,7 +6,7 @@ const VideoRemake = () => {
     return (
         <div>
             <div id="header" className="showing">
-  <video id='scroll-video-increase' src={"https://media.istockphoto.com/videos/connected-line-and-dots-on-black-background-video-id1319949489"}  type="video/mp4" autoPlay muted loop ></video>
+  <video id='scroll-video-increase' src={"https://media.istockphoto.com/videos/medical-science-laboratory-beautiful-black-scientist-looking-under-video-id1297574801"}  type="video/mp4" autoPlay muted loop ></video>
 
   {/* <Script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></Script>
 <Script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></Script>
