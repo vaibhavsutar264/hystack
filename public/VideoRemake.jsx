@@ -5,6 +5,9 @@ import Script from 'next/script';
 const VideoRemake = () => {
     return (
         <div>
+             <div class="title-animation-box-video-remake">
+                        <h1 class="title-animation-video-remake">A Revolutionary technology to aid microbiology <br /> A Revolutionary technology to aid microbiology </h1>
+                    </div>
             <div id="header" className="showing">
   <video id='scroll-video-increase' src={"https://media.istockphoto.com/videos/medical-science-laboratory-beautiful-black-scientist-looking-under-video-id1297574801"}  type="video/mp4" autoPlay muted loop ></video>
 

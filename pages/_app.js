@@ -64,6 +64,7 @@ import '../public/Footer';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js';
 // import data from "../src/data/data.json";
+import PreAnimationOnLoad from "../public/PreAnimationOnLoad";
 import HambergerMenuWithScriptTag from "../public/HambergerMenuWithScriptTag";
 // import NavbarContent from "../public/NavbarContent";
 // import Navbar from "../src/components/Navbar";
@@ -95,6 +96,7 @@ function MyApp({ Component, pageProps }) {
     <>
     
     {/* <HambergerMenuWithJQuery/> */}
+    <PreAnimationOnLoad/>
     
     <HambergerMenuWithScriptTag />
 

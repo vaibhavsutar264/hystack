@@ -2,25 +2,12 @@ import Script from 'next/script'
 import Link from 'next/link';
 import Head from 'next/head';
 
-import React, { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-<Link to="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
-const topBottomVariants = {
-    visible: { opacity: 1, scale: 1, transition: { delay:0.2,duration:2 } },
-    hidden: { opacity: 0.5, scale: 0.5 }
-  };    
+import React from "react";
+{/* <Link to="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />   */}
 
 // next.config.js
 
 const textVideo = () => {
-    const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
     return (
         <>
             <Head>
@@ -29,11 +16,11 @@ const textVideo = () => {
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
             </Head>
             <main className="flexbox" id="flexbox">
-                <div   className="button-wrapper link" id="button-wrapper">
-                        <motion.div ref={ref} animate={controls} initial="hidden" variants={topBottomVariants} className="relative">
+                <div className="button-wrapper link" id="button-wrapper">
+                        <div className="relative">
                             <h2 id='text-video-h2'>
                             <div className="text-1 text-video-text">
-                                <span>Idjbhdhdbcdcdh</span>
+                                <span>I</span>
                                 <span>n</span>
                                 <span>f</span>
                                 <span>e</span>
@@ -95,7 +82,7 @@ const textVideo = () => {
                              {/* <video src={require('./istockphoto-454669794-640_adpp_is.mp4')}  id="banner" type="video/mp4" autoPlay loop /> */}
 
                             {/* <video src="istockphoto-454669794-640_adpp_is.mp4" id="banner" type="video/mp4" muted loop autoPlay></video> */}
-                        </motion.div>
+                        </div>
                         <div><h2 id='text-video-h6'> Avoid Avoidable Deaths with The Haystack UID test</h2></div>
                         
                         
