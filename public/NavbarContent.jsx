@@ -1,9 +1,23 @@
-import React from "react";
-// import latestNews from "./latest-news-1.jpg";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const topBottomVariants = {
+    visible: { y: 0, opacity: 1,  transition: { delay:1,duration:1.5 } },
+    hidden: { y:-50, opacity: 0 }
+  };
+
 
 const NavbarContent = () => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      }
+    }, [controls, inView]);
     return (
-        <div className="nav-menu col-12">
+        <motion.div  ref={ref} animate={controls} initial="hidden" variants={topBottomVariants} className="nav-menu col-12">
             <div className="nav-menu-inner-container-1">
                 <div className="nav-link-wrapper">
                     <a href="#ecosystem" className="nav-link"><strong>ECOSYSTEM</strong></a>
@@ -87,7 +101,7 @@ const NavbarContent = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

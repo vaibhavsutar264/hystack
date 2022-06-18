@@ -63,12 +63,12 @@ import '../public/Footer';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js';
-// import data from "../src/data/data.json";
+import data from "../src/data/data.json";
 import PreAnimationOnLoad from "../public/PreAnimationOnLoad";
 import HambergerMenuWithScriptTag from "../public/HambergerMenuWithScriptTag";
 // import NavbarContent from "../public/NavbarContent";
 // import Navbar from "../src/components/Navbar";
-// import OurPartners from "../src/components/OurPartners";
+import OurPartners from "../public/OurPartners";
 import TextVideo from "../public/textVideo";
 // import About from "./About";
 import Precision from "../public/Precision";
@@ -77,7 +77,7 @@ import WeGotCovered from "../public/WeGotCovered";
 import Footer from "../public/Footer";
 
 // import Video from "../public/Video";
-import MouseMoveScroll from "../public/MouseMoveScroll";
+// import MouseMoveScroll from "../public/MouseMoveScroll";
 import VideoRemake from "../public/VideoRemake";
 import { motion } from 'framer-motion';
 // import { ScrollContainer, ScrollPage, Animator, FadeOut, ZoomOut, batch, ZoomIn } from 'react-scroll-motion';
@@ -119,10 +119,12 @@ function MyApp({ Component, pageProps }) {
       {/* </Animator>
       </ScrollPage>
       </ScrollContainer> */}
-      {/* <OurPartners ourPartner={data.ourPartner} /> */}
+      
       <div className="section" data-bg="rgb(36, 101, 237)">
-      <MouseMoveScroll/>
+      <OurPartners ourPartner={data.ourPartner} />
       </div>
+      {/* <MouseMoveScroll/> */}
+
       <div className="section" data-bg="rgb(36, 101, 237)">
       <Precision/>
       </div>

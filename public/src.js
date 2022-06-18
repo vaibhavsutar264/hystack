@@ -539,12 +539,12 @@ var windowWidth = $(window).width();
     
 $('.page-container').mousemove(function(event){
 
-    var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+    var moveX = (($(window).width() / 2) - event.pageX) * 0.2;
     $('.page-back').css('margin-left', moveX + 'px');
 });
 $('.page-container').mouseout(function(event){
 
-    var moveX = (($(window).width() / 2) + event.pageX) * 0.1;
+    var moveX = (($(window).width() / 2) + event.pageX) * 0.2;
     $('.page-back').css('margin-left', moveX - 'px');
 });
     }}
